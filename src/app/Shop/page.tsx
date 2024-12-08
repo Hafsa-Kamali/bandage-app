@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import ProductList from "@/app/BestProducts";
-import Link from "next/link";
+
 const ShopPage: React.FC = () => {
   return (
     <div className="bg-gray-100 min-h-screen p-6">
