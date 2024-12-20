@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
+
 interface Product {
   id: number;
   image: string;
@@ -89,6 +90,7 @@ const products: Product[] = [
 
 const Page: React.FC = () => {
   return (
+    
     <div className="container mx-auto p-4 ">
         <h3 className="text-center text-gray-500 mt-4 mb-2" >Featured Products</h3>
     <h2 className="text-center text-xl md:text-2xl font-family font-bold mb-4">BEST SELLERS PRODUCTS</h2>

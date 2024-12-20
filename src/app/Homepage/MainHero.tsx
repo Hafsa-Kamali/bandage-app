@@ -3,15 +3,15 @@ import React from 'react'
 
 const Heropage = () => {
   return (
-    <div className="h-screen w-full bg-cyan-500">
-      <div className="relative flex flex-col md:flex-row justify-center md:justify-start items-center h-full">
+    <div className="h-screen w-full bg-transparent">
+      <div className="relative flex flex-col md:flex-row justify-center md:justify-start items-center h-full ">
         {/* Hero Image */}
         <Image
-          src="/assets/Bandage-hero.jpg"
+          src="/assets/shop-hero-1-product-slide-1.jpg"
           alt="hero"
           layout="fill"
           objectFit="cover"
-          className=""
+          className=" "
         />
 
         {/* Content Section */}

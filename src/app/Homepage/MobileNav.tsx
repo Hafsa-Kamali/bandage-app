@@ -30,7 +30,7 @@ const NavMobile = ({ showNav, closeNav }: Props) => {
         <div className='absolute top-10 left-4 w-[100%]'>
           <h1 className='text-[24px] font-bold font-family text-black'>Bandage</h1>
           </div>
- <div className="flex flex-col space-y-16 text-3xl font-family">
+ <div className="flex flex-col space-y-10 text-2xl font-family mt-2">
           <Link href="/"
              className="text-[#737373] hover:underline hover:underline-offset-8 hover:scale-105">Home
           </Link>
@@ -48,12 +48,12 @@ const NavMobile = ({ showNav, closeNav }: Props) => {
 
 
                {/* Close Button */}
-       <div>
+       <div className="">
           <Bars3BottomRightIcon
             onClick={closeNav}
             className="absolute top-[2.2rem] right-[1.4rem] w-[2.2rem] h-[2.2rem] text-black hover:text-stone-500 cursor-pointer"
           />
-          <FaRegUser className='mr-2' /><Link href="/Login">
+          <FaRegUser className='mr-2 text-[#23A6F0] hover:scale-110' /><Link href="/Login" className='text-[#23A6F0] hover:scale-110'>
           Login</Link>
           <BsCart3 className='absolute top-[2.2rem] right-[9.4rem] w-[2.2rem] h-[2.2rem] text-black hover:text-stone-500 cursor-pointer'/>
           <CiSearch className='absolute top-[2.2rem] right-[5.4rem] w-[2.2rem] h-[2.2rem] text-black hover:text-stone-500 cursor-pointer'/>

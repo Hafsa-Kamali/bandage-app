@@ -4,20 +4,22 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
-    <footer className="">
-      <div className="w-full px-4 sm:px-6 lg:px-0">
+
+      <footer className="">
         {/* Top Section */}
-        <div className="flex w-[1550px] justify-between items-center p-10 bg-[#FAFAFA]">
-          <h1 className="text-2xl font-bold text-gray-800 ml-9">Bandage</h1>
-          <div className="flex space-x-4 md:mr-14">
-          <FaFacebook  className="text-2xl text-sky-500"/>
-          <FaInstagram  className="text-2xl text-sky-500"/>
-          <FaTwitter  className="text-2xl text-sky-500"/>
-          </div>
-        </div>
+        <div className="flex relative w-full justify-between items-center p-10 bg-[#FAFAFA] border-gray-300 custom-border">
+  <h1 className="text-2xl font-bold text-gray-800 ml-0">Bandage</h1>
+  <div className="flex space-x-4 md:mr-14">
+    <FaFacebook className="text-2xl text-sky-500"/>
+    <FaInstagram className="text-2xl text-sky-500"/>
+    <FaTwitter className="text-2xl text-sky-500"/>
+  </div>
+</div>
+
+      
 
         {/* Links Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mt-8 bg-[#FFFFFF]">
+        <div className="grid md:w-[1550px] w-[100%]  grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 bg-[#FFFFFF] p-10">
           {/* Column 1 */}
           <div className="space-x-4">
             <h2 className="font-semibold text-gray-800 mb-4 ml-3">Company Info</h2>
@@ -79,16 +81,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-8 text-start p-8 text-gray-500 text-sm bg-[#FAFAFA]">
+        <div className="text-start p-8 text-gray-500 text-sm bg-[#FAFAFA] md:w-[1550px] w-[100%]">
           Made With Love By Finland All Rights Reserved
-         <div className="flex space-x-6">
-          <FaFacebook  className="text-2xl text-sky-500"/>
-          <FaInstagram  className="text-2xl text-sky-500"/>
-          <FaTwitter  className="text-2xl text-sky-500"/>
+         
         </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
+ 
   );
 };
 

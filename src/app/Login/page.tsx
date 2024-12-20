@@ -1,7 +1,17 @@
-import React from 'react'
+"use client";
+import React, { useState } from 'react'
 import Image from 'next/image'
-const Page = () => {
+import NavMobile from '../Homepage/MobileNav';
+import Navbar from '../Homepage/Navbar';
+import Footer from '../Homepage/Footer';
+
+
+const Page: React.FC = () => {
+  const [showNav, setShowNav] = useState(false);
   return (
+    <main className="overflow-x-hidden ">
+      <NavMobile showNav={showNav} closeNav={() => setShowNav(false)} />   
+      <Navbar openNav={() => setShowNav(true)} />
     <div className="font-family">
     <div className="min-h-screen flex flex-col items-center justify-center">
       <div className="grid md:grid-cols-2 items-center gap-4 max-md:gap-8 max-w-6xl max-md:max-w-lg w-full p-4 m-4 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md">
@@ -101,11 +111,13 @@ const Page = () => {
         </div>
 
         <div className=" rounded-xl lg:p-8 p-8">
-          <Image src="/assets/fixed-height(12).png" width={500} height={500} className="w-full h-full object-cover" alt="login-image" />
+          <Image src="/assets/fixed-height(3).png" width={500} height={500} className="md:w-[60%] md:h-[50%] object-cover mx-auto" alt="login-image" />
         </div>
       </div>
     </div>
   </div>
+  <Footer/>
+  </main>
   )
 }
 
