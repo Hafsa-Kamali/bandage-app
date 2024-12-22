@@ -251,7 +251,7 @@ const AboutUs: React.FC = () => {
               <div className="w-full md:w-1/2 bg-blue-500 p-12 flex items-center justify-center">
                 <div className="text-white max-w-md">
                   <h3 className="text-sm uppercase mb-2">WORK WITH US</h3>
-                  <h2 className="text-3xl font-bold mb-4">Now Let's grow Yours</h2>
+                  <h2 className="text-3xl font-bold mb-4">Now Let&apos;s grow Yours</h2>
                   <p className="mb-6">
                     The brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.
                   </p>
