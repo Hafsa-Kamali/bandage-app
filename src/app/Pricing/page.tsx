@@ -75,16 +75,16 @@ const PricingPage = () => {
           <div className="flex items-center gap-8">
             <h1 className="text-xl font-bold">Bandage</h1>
             <div className="hidden md:flex gap-8">
-              <Link href="#" className="text-gray-600 hover:text-gray-900">Home</Link>
-              <Link href="#" className="text-gray-600 hover:text-gray-900">Product</Link>
-              <Link href="#" className="text-gray-600 hover:text-gray-900">Pricing</Link>
-              <Link href="#" className="text-gray-600 hover:text-gray-900">Contact</Link>
+              <Link href="/" className="text-gray-600 hover:text-gray-900">Home</Link>
+              <Link href="/About" className="text-gray-600 hover:text-gray-900">About</Link>
+              <Link href="/Shop" className="text-gray-600 hover:text-gray-900">Pricing</Link>
+              <Link href="/Contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <button className="text-blue-500 hover:text-blue-600">Login</button>
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md flex items-center gap-2">
-              Become Link member
+            <button className="text-sky-500 hover:text-sky-600 font-bold">Login</button>
+            <button className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-2 rounded-md flex items-center gap-2">
+              Become a member
               <span>→</span>
             </button>
           </div>
@@ -299,7 +299,7 @@ const PricingPage = () => {
       <p className=" text-md md:text-lg mb-8">
         Met minim Mollie non desert Alamo est sit cliquy dolor do met sent. RELIT official consequent.
       </p>
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      <button className="bg-sky-500 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded">
         Try it free now
       </button>
       <div className="mt-8 flex space-x-6 ">
