@@ -113,9 +113,9 @@ const PricingPage = () => {
           <h2 className="text-4xl font-bold text-gray-900">Simple Pricing</h2>
           
           <div className="flex justify-center items-center gap-2 text-sm">
-            <span className="text-gray-900">Home</span>
+            <Link href="/" className="text-gray-900">Home</Link>
             <span>{">"}</span>
-            <span className="text-gray-600">Pricing</span>
+            <Link href="/Pricing" className="text-gray-600">Pricing</Link>
           </div>
         </div>
 

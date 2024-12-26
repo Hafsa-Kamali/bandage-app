@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import NavMobile from '../Homepage/MobileNav';
 import Footer from '../Homepage/Footer';
+import { FaPlay } from "react-icons/fa";
 
 const AboutUs: React.FC = () => {
     const [showNav, setShowNav] = useState(false);
@@ -116,7 +117,6 @@ const AboutUs: React.FC = () => {
             name: 'Lawrence',
             role: 'Developer',
             image: '/assets/media(1).png',
-            
             socials: ['facebook', 'twitter', 'linkedin']
           },
           {
@@ -133,7 +133,6 @@ const AboutUs: React.FC = () => {
           }
         ];
 
-
         return (
           <div className="w-full">
             {/* Hero Section */}
@@ -147,8 +146,8 @@ const AboutUs: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-blue-500 rounded-full p-4">
-                    <div className="w-8 h-8 bg-white rounded-full"></div>
+                  <div className="bg-blue-400  rounded-full p-4">
+                    <div> <FaPlay className='text-white text-lg'/></div>
                   </div>
                 </div>
               </div>
@@ -251,7 +250,7 @@ const AboutUs: React.FC = () => {
               <div className="w-full md:w-1/2 bg-blue-500 p-12 flex items-center justify-center">
                 <div className="text-white max-w-md">
                   <h3 className="text-sm uppercase mb-2">WORK WITH US</h3>
-                  <h2 className="text-3xl font-bold mb-4">Now Let&apos;s grow Yours</h2>
+                  <h2 className="text-3xl font-bold mb-4">Now Let's grow Yours</h2>
                   <p className="mb-6">
                     The brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.
                   </p>
